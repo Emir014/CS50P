@@ -1,9 +1,7 @@
-camelCase = input("camelCase: ")
-snake_case = ""
+text = input("camelCase: ")
 
-for char in camelCase:
+for char in text:
     if char.isupper():
-        char = "_" + char.lower()
-    snake_case += char
+        text = text.replace(char, "_" + char.lower())
 
-print(snake_case)
+print(text)
